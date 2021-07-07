@@ -24,7 +24,7 @@
     },
     "publicIpName": {
       "type": "string",
-      "defaultValue": "WvdWin10VM-PIP",
+      "defaultValue": "IntuneVM-PIP",
       "metadata": {
         "description": "Name for the Public IP used to access the Virtual Machine."
       }
@@ -79,7 +79,7 @@
     },
     "vmName": {
       "type": "string",
-      "defaultValue": "Win10VM",
+      "defaultValue": "IntuneVM",
       "metadata": {
         "description": "Name of the virtual machine."
       }
@@ -87,13 +87,13 @@
   },
   "variables": {
     "storageAccountName": "[concat('bootdiags', uniquestring(resourceGroup().id))]",
-    "nicName": "WvdWin10Image-Nic",
-    "addressPrefix": "10.0.0.0/16",
-    "subnetName": "Subnet",
-    "subnetPrefix": "10.0.0.0/24",
-    "virtualNetworkName": "WvdWin10Image-VNET",
+    "nicName": "IntuneVM-Nic",
+    "addressPrefix": "100.0.0.0/16",
+    "subnetName": "IntuneSubnet",
+    "subnetPrefix": "100.0.0.0/24",
+    "virtualNetworkName": "GoContractor-VNET",
     "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
-    "networkSecurityGroupName": "WvdWin10Image-NSG"
+    "networkSecurityGroupName": "GoContractor-NSG"
   },
   "resources": [
     {
