@@ -3,18 +3,18 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "adminUsername": {
-      "value": "mehodgeadmin" //Name of Local Admin
+      "value": "localadmin" //Name of Local Admin
     },
     "adminPassword": {
     "reference": {
         "keyVault": {
-            "id": "/subscriptions/c25742b0-e9d4-4bed-8247-0ec3c6bc5a42/resourceGroups/VM-KeyVault-RG/providers/Microsoft.KeyVault/vaults/LocalVmAdmins"
+            "id": "/subscriptions/e7aabd16-98cd-4367-ad15-a2d7c95b70d8/resourceGroups/CCHT-WVD-RG/providers/Microsoft.KeyVault/vaults/arkadmin"
         },
-        "secretName": "LocalVmAdmins" //Name of Vault
+        "secretName": "LocalAdmin" //Name of Secret
         }
     },
     "dnsLabelPrefix": {
-      "value": "gocontractor"
+      "value": "avd-image"
     }
   }
 }

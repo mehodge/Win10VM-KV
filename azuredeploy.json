@@ -24,7 +24,7 @@
     },
     "publicIpName": {
       "type": "string",
-      "defaultValue": "IntuneVM-PIP",
+      "defaultValue": "AVD-VM-PIP",
       "metadata": {
         "description": "Name for the Public IP used to access the Virtual Machine."
       }
@@ -79,7 +79,7 @@
     },
     "vmName": {
       "type": "string",
-      "defaultValue": "IntuneVM",
+      "defaultValue": "AVD-VM",
       "metadata": {
         "description": "Name of the virtual machine."
       }
@@ -87,13 +87,13 @@
   },
   "variables": {
     "storageAccountName": "[concat('bootdiags', uniquestring(resourceGroup().id))]",
-    "nicName": "IntuneVM-Nic",
+    "nicName": "AVD-VM-Nic",
     "addressPrefix": "100.0.0.0/16",
     "subnetName": "IntuneSubnet",
     "subnetPrefix": "100.0.0.0/24",
-    "virtualNetworkName": "GoContractor-VNET",
+    "virtualNetworkName": "AVD-VNET",
     "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
-    "networkSecurityGroupName": "GoContractor-NSG"
+    "networkSecurityGroupName": "AVD-NSG"
   },
   "resources": [
     {

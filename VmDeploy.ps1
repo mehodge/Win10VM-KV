@@ -1,8 +1,8 @@
-$TenantId = '5c147d8a-3229-4a42-a54e-98b937904e15'
-$SubID = 'c25742b0-e9d4-4bed-8247-0ec3c6bc5a42'
-$RG = 'GoContractorIntune-RG'
-$Location = "North Europe"
-$Name = 'IntuneVM'
+$TenantId = '73b820f6-c42e-447c-a4b5-2eef6c06aadc'
+$SubID = 'e7aabd16-98cd-4367-ad15-a2d7c95b70d8'
+$RG = 'AVD-Image-RG'
+$Location = "UK South"
+$Name = 'AVD-VM'
 $TemplateFile = "C:\Users\mehodgeadmin\OneDrive\Git\Win10VM-KV\azuredeploy.json"
 $TemplateParameterFile = "C:\Users\mehodgeadmin\OneDrive\Git\Win10VM-KV\azuredeploy.parameters.json"
 
